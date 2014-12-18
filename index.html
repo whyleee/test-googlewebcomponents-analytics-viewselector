@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Google Analytics Polymer Elements Demo</title>
+  <script src="webcomponents.min.js"></script>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:700,400,300">
+  <link rel="stylesheet" href="demo.css" shim-shadowdom>
+  <link rel="import" href="google-signin.html">
+  <link rel="import" href="google-analytics-view-selector.html">
+</head>
+<body unresolved>
+
+  <header>
+    <h1>Google Analytics <em>Polymer Elements Demo</em></h1>
+    <google-signin
+      clientId="{YOUR_CLIENT_ID}"
+      scopes="https://www.googleapis.com/auth/analytics.readonly">
+    </google-signin>
+  </header>
+
+  <google-analytics-view-selector ids="{INSERT_IDS_HERE}"></google-analytics-view-selector>
+
+</body>
+</html>
